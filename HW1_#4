@@ -1,0 +1,14 @@
+//Program to demostrate redirection of input
+
+import java.util.Scanner;
+
+public class Redirection{
+	public static void main(String[] arg){
+		Scanner s = new Scanner(System.in);
+		int myNumber;
+		while(s.hasNextInt()){
+			myNumber = s.nextInt();
+			System.out.println(myNumber);
+		}
+	}
+}
