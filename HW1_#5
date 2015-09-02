@@ -1,0 +1,55 @@
+//This progam calculate the lengths of 2D triangle
+import java.util.Scanner;
+
+public class Triangle2D{
+	public static void main(String[] arg){
+		//points of the triangle
+	int pointA_X, pointA_Y;
+	int pointB_X, pointB_Y;
+	int pointC_X, pointC_Y;
+	
+	Scanner s = new Scanner(System.in);
+	//s.useDelimiter(",");
+	System.out.print("Enter the coordinates of the first point: ");
+	pointA_X = s.nextInt();
+	pointA_Y = s.nextInt();
+	
+	System.out.print("\n" + "Enter the coordinates of the second point: ");
+	pointB_X = s.nextInt();
+	pointB_Y = s.nextInt();
+
+	System.out.print("\n" + "Enter the coordinates of the third point: ");
+	pointC_X = s.nextInt();
+	pointC_Y = s.nextInt();
+	
+	s.close();
+	double lengthAToB, lengthAToC, lengthBToC;
+	lengthAToB = Math.sqrt((Math.pow((pointB_X - pointA_X), 2) + (Math.pow((pointB_Y - pointA_Y), 2))));
+	lengthAToC = Math.sqrt((Math.pow((pointC_X - pointA_X), 2) + (Math.pow((pointC_Y - pointA_Y), 2))));
+	lengthBToC = Math.sqrt((Math.pow((pointB_X - pointC_X), 2) + (Math.pow((pointB_Y - pointC_Y), 2))));
+	
+	System.out.print("Length from A to B is: ");
+	System.out.printf("%4.2f\n", lengthAToB);
+	System.out.print("Length from A to C is: ");
+	System.out.printf("%4.2f\n", lengthAToC);
+	System.out.print("Length from B to C is: ");
+	System.out.printf("%4.2f\n", lengthBToC);
+
+	if((lengthAToB + lengthAToC) < lengthBToC || (lengthAToB + lengthAToC) == lengthBToC)
+		System.out.println("The angle is not real");
+	else
+	if((lengthAToB + lengthBToC) < lengthAToC || (lengthAToB + lengthBToC) == lengthAToC)
+		System.out.println("The angle is not real");
+	else
+	if((lengthBToC + lengthAToC) < lengthAToB || (lengthBToC + lengthAToC) == lengthAToB)
+		System.out.println("The angle is not real");
+		
+	else
+		System.out.println("The triangle is real");
+
+		
+	}
+
+
+}
+	
