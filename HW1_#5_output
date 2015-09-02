@@ -1,0 +1,46 @@
+
+C:\OBJ>java Triangle2D
+Enter the coordinates of the first point: 3 7
+
+Enter the coordinates of the second point: 4 8
+
+Enter the coordinates of the third point: 2 0
+Length from A to B is: 1.41
+Length from A to C is: 7.07
+Length from B to C is: 8.25
+The triangle is real
+
+C:\OBJ>java Triangle2D
+Enter the coordinates of the first point: 0 5
+
+Enter the coordinates of the second point: 0 9
+
+Enter the coordinates of the third point: 4 8
+Length from A to B is: 4.00
+Length from A to C is: 5.00
+Length from B to C is: 4.12
+The triangle is real
+
+C:\OBJ>java Triangle2D
+Enter the coordinates of the first point: 3 4
+
+Enter the coordinates of the second point: 6 10
+
+Enter the coordinates of the third point: 0 2
+Length from A to B is: 6.71
+Length from A to C is: 3.61
+Length from B to C is: 10.00
+The triangle is real
+
+C:\OBJ>java Triangle2D
+Enter the coordinates of the first point: 3 9
+
+Enter the coordinates of the second point: 5 8
+
+Enter the coordinates of the third point: 3 9
+Length from A to B is: 2.24
+Length from A to C is: 0.00
+Length from B to C is: 2.24
+The angle is not real
+
+C:\OBJ>
