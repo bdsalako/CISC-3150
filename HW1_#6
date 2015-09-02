@@ -1,0 +1,31 @@
+//This program finds the relationship of two circles
+import java.util.Scanner;
+
+public class TwoCircles{
+	public static void main(String[] arg){
+		Scanner s = new Scanner(System.in);
+		double circleAx, circleAy, circleBx, circleBy;
+		double radiusA, radiusB;
+		System.out.print("Enter coordinate for first circle: ");
+		circleAx = s.nextDouble();
+		circleAy = s.nextDouble();
+		System.out.print("Enter radius for first circle: ");
+		radiusA = s.nextDouble();
+
+		System.out.print("Enter coordinate for second circle: ");
+		circleBx = s.nextDouble();
+		circleBy = s.nextDouble();
+		System.out.print("Enter radius for second circle: ");
+		radiusB = s.nextDouble();
+		
+		double distanceAB = Math.sqrt((Math.pow((circleAx - circleBx), 2) + (Math.pow((circleAy - circleBy), 2))));
+		if(distanceAB == 0)
+			System.out.println("The circles are completely inside each other");
+		if(distanceAB > (radiusA + radiusB))
+			System.out.println("The circles do not overlap");
+		if(distanceAB < (radiusA + radiusB))
+			System.out.println("The circles overlap");
+		if(distanceAB == (radiusA + radiusB))
+			System.out.println("The circles touch each other at circumference");
+	}
+}
