@@ -1,0 +1,17 @@
+//Program to calculate the area of a circle
+import java.util.Scanner;
+import java.lang.Math;;
+
+public class RadiusOfCircle {
+	public static void main(String[] arg){
+		Scanner myScanner = new Scanner(System.in);
+		int radius;
+		double area;
+		System.out.println("Enter the value of radius, Ctrl C to end");
+		while(myScanner.hasNext()){
+		radius = myScanner.nextInt();
+		area = Math.PI * Math.pow(radius, 2);
+		System.out.printf("The area of cirlce is " + "%4.2f\n",  area);	
+		}	
+	}
+}
