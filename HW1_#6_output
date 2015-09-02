@@ -1,0 +1,33 @@
+
+C:\OBJ>javac TwoCircles.java
+
+C:\OBJ>java TwoCircles
+Enter coordinate for first circle: 3 4
+Enter radius for first circle: 2.5
+Enter coordinate for second circle: 6 8
+Enter radius for second circle: 2.5
+The circles touch each other at circumference
+
+C:\OBJ>java TwoCircles
+Enter coordinate for first circle: 4 2
+Enter radius for first circle: 5
+Enter coordinate for second circle: 4 2
+Enter radius for second circle: 7
+The circles are completely inside each other
+The circles overlap
+
+C:\OBJ>java TwoCircles
+Enter coordinate for first circle: 3 9
+Enter radius for first circle: 3
+Enter coordinate for second circle: 2 8
+Enter radius for second circle: 4
+The circles overlap
+
+C:\OBJ>java TwoCircles
+Enter coordinate for first circle: 0 3
+Enter radius for first circle: 3
+Enter coordinate for second circle: 5 4
+Enter radius for second circle: 2
+The circles do not overlap
+
+C:\OBJ>
